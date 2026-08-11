@@ -33,14 +33,14 @@ chmod 764 dir2/hello.sh
 ls dir2 > dir2/list.txt
 
 # копируем содержимое каталога task/dir2 в каталог task/dir3/dir4
-cp -r dir2  dir3/dir4
+cp -r dir2/.  dir3/dir4
 
 # записываем в task/dir1/summary.txt список файлов с расширением *.txt
 # находящихся в task, включая поддиректории
 find . -name "*.txt" > dir1/summary.txt
 
 # дописываем в task/dir1/summary.txt содержимое task/dir2/list.txt
-cat dir2/list.txt >> dir/summary.txt
+cat dir2/list.txt >> dir1/summary.txt
 
 # определяем переменную окружения NAME со значением "Всем студентам"
 
