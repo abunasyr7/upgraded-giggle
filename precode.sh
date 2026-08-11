@@ -30,14 +30,14 @@ EOF
 chmod 764 dir2/hello.sh 
 
 # сохраняем список файлов task/dir2 в task/dir2/list.txt
-
+ls dir2 > dir2/list.txt
 
 # копируем содержимое каталога task/dir2 в каталог task/dir3/dir4
-
+cp -r dir2  dir3/dir4
 
 # записываем в task/dir1/summary.txt список файлов с расширением *.txt
 # находящихся в task, включая поддиректории
-
+find . -name "*.txt" > dir1/summary.txt
 
 # дописываем в task/dir1/summary.txt содержимое task/dir2/list.txt
 
