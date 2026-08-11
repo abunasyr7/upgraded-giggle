@@ -15,6 +15,7 @@ cd task
 
 # создаём пустой файл task/dir2/empty
 
+touch dir2/empty
 
 # создаём файл task/dir2/hello.sh с таким содержанием:
 # #!/bin/bash
