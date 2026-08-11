@@ -21,12 +21,13 @@ touch dir2/empty
 # #!/bin/bash
 # echo "$1, привет!"
 
-
-
-
+cat > dir2/hello.sh << 'EOF'
+#!/bin/bash
+echo "$1, привет!"
+EOF
 
 # устанавливаем для task/dir2/hello.sh права rwxrw-r--
-
+chmod 764 dir2/hello.sh 
 
 # сохраняем список файлов task/dir2 в task/dir2/list.txt
 
